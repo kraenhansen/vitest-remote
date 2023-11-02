@@ -1,0 +1,13 @@
+{
+  "name": "jest-remote",
+  "version": "0.1.0",
+  "description": "Run Jest tests anywhere - get reporting in your terminal",
+  "repository": "https://github.com/kraenhansen/",
+  "keywords": ["jest"],
+  "author": {
+    "name": "Kræn Hansen",
+    "email": "mail@kraenhansen.dk",
+    "url": "https://github.com/kraenhansen"
+  },
+  "license": "ISC"
+}
