@@ -9,12 +9,36 @@
     "url": "https://github.com/kraenhansen"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nx run-many -t test",
+    "build": "nx run-many -t build"
   },
   "keywords": [
     "vitest",
     "vitest-runner",
     "remote"
   ],
-  "license": "ISC"
+  "workspaces": [
+    "examples/expo",
+    "packages/client"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "nx": "^17.1.1",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ]
+  }
 }
