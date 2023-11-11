@@ -1,0 +1,17 @@
+{
+  "extends": "..",
+  "compilerOptions": {
+    "types": [
+      "@vitest/browser",
+      "@vitest/runner"
+    ],
+    "lib": [
+      "DOM",
+      "ES2022"
+    ]
+  },
+  "exclude": [],
+  "include": [
+    "."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "..",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "@vitest/runner",
+      "vitest/runners"
+    ]
+  },
+  "exclude": [],
+  "include": [
+    "."
+  ]
+}

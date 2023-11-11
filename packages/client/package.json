@@ -1,0 +1,35 @@
+{
+  "name": "vitest-remote-client",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts"
+    },
+    "./runner": {
+      "node": "./dist/src/node/runner.js",
+      "react-native": {
+        "import": "./dist/src/react-native/runner.js",
+        "types": "./dist/src/react-native/runner.d.ts"
+      },
+      "browser": "./dist/src/browser/runner.js",
+      "types": "./dist/src/runner.d.ts"
+    }
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "outputs": ["{projectRoot}/dist"]
+      }
+    }
+  },
+  "peerDependencies": {
+    "@vitest/runner": "^0.34.6",
+    "@vitest/browser": "^0.34.6"
+  }
+}
