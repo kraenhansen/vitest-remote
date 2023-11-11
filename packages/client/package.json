@@ -7,17 +7,17 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/src/index.js",
-      "types": "./dist/src/index.d.ts"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./runner": {
-      "node": "./dist/src/node/runner.js",
+      "node": "./dist/node/runner.js",
       "react-native": {
-        "import": "./dist/src/react-native/runner.js",
-        "types": "./dist/src/react-native/runner.d.ts"
+        "import": "./dist/react-native/runner.js",
+        "types": "./dist/react-native/runner.d.ts"
       },
-      "browser": "./dist/src/browser/runner.js",
-      "types": "./dist/src/runner.d.ts"
+      "browser": "./dist/browser/runner.js",
+      "types": "./dist/runner.d.ts"
     }
   },
   "nx": {
