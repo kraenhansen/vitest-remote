@@ -1,7 +1,10 @@
 {
-  "extends": "..",
+  "extends": "../../../../tsconfig-base.json",
   "compilerOptions": {
+    "outDir": "../../dist/browser",
+    "rootDir": ".",
     "types": [
+      "vitest-remote-client/common",
       "@vitest/browser",
       "@vitest/runner"
     ],
@@ -10,8 +13,10 @@
       "ES2022"
     ]
   },
-  "exclude": [],
   "include": [
     "."
+  ],
+  "references": [
+    { "path": "../common" }
   ]
 }

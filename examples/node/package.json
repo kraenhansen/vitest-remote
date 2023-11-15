@@ -1,0 +1,12 @@
+{
+  "name": "vitest-remote-node-example",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "vitest-remote": "0.1.0",
+    "vitest": "1.0.0-beta.4"
+  }
+}

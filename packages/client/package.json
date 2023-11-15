@@ -7,17 +7,22 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./runner": {
-      "node": "./dist/node/runner.js",
-      "react-native": {
-        "import": "./dist/react-native/runner.js",
-        "types": "./dist/react-native/runner.d.ts"
+      "node": {
+        "import": "./dist/node/index.js",
+        "types": "./dist/node/index.d.ts"
       },
-      "browser": "./dist/browser/runner.js",
-      "types": "./dist/runner.d.ts"
+      "react-native": {
+        "import": "./dist/react-native/index.js",
+        "types": "./dist/react-native/index.d.ts"
+      },
+      "browser": {
+        "import": "./dist/browser/index.js",
+        "types": "./dist/browser/index.d.ts"
+      }
+    },
+    "./common": {
+      "default": "./dist/common/index.js",
+      "types": "./dist/common/index.d.ts"
     }
   },
   "nx": {
@@ -29,7 +34,21 @@
     }
   },
   "peerDependencies": {
-    "@vitest/runner": "^0.34.6",
-    "@vitest/browser": "^0.34.6"
+    "@vitest/runner": "1.0.0-beta.4",
+    "@vitest/browser": "1.0.0-beta.4",
+    "react": "^18.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react-native": "0.72.6"
   }
 }

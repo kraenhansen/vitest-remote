@@ -1,0 +1,25 @@
+{
+  "name": "vitest-remote-runner",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "cache": true,
+        "outputs": ["{projectRoot}/dist"]
+      }
+    }
+  },
+  "peerDependencies": {
+    "@vitest/runner": "1.0.0-beta.4"
+  }
+}

@@ -1,14 +1,19 @@
 {
-  "extends": "..",
+  "extends": "../../../../tsconfig-base.json",
   "compilerOptions": {
+    "outDir": "../../dist/node",
+    "rootDir": ".",
     "types": [
+      "vitest-remote-client/common",
       "node",
       "@vitest/runner",
       "vitest/runners"
     ]
   },
-  "exclude": [],
   "include": [
     "."
+  ],
+  "references": [
+    { "path": "../common" }
   ]
 }

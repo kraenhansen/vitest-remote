@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig-base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noResolve": false,
+    "types": [
+      "node",
+      "@vitest/runner"
+    ]
+  },
+  "include": [
+    "./src"
+  ]
+}

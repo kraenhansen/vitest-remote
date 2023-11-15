@@ -1,6 +1,8 @@
 {
-  "extends": "..",
+  "extends": "../../../../tsconfig-base.json",
   "compilerOptions": {
+    "outDir": "../../dist/common",
+    "rootDir": ".",
     "composite": true,
     "noResolve": true,
     "types": [
@@ -12,11 +14,6 @@
   },
   "include": [
     "."
-  ],
-  "exclude": [
-    "./browser",
-    "./node",
-    "./react-native"
   ],
   "references": []
 }

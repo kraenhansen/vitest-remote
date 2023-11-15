@@ -1,13 +1,21 @@
 {
-  "extends": "..",
+  "extends": "../../../../tsconfig-base.json",
   "compilerOptions": {
+    "outDir": "../../dist/react-native",
+    "rootDir": ".",
+    "noResolve": false,
+    "jsx": "react-native",
     "types": [
+      "vitest-remote-client/common",
+      "react",
       "react-native",
       "@vitest/runner"
     ]
   },
-  "exclude": [],
   "include": [
     "."
+  ],
+  "references": [
+    { "path": "../common" }
   ]
 }

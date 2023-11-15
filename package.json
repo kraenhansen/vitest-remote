@@ -3,14 +3,30 @@
   "version": "0.1.0",
   "description": "Run vitest tests anywhere - get reporting in your terminal",
   "repository": "https://github.com/kraenhansen/vitest-remote",
+  "type": "module",
   "author": {
     "name": "Kræn Hansen",
     "email": "mail@kraenhansen.dk",
     "url": "https://github.com/kraenhansen"
   },
+  "exports": {
+    "./client": {
+      "default": "./dist/client.mjs",
+      "types": "./dist/client.d.ts"
+    },
+    "./server": {
+      "default": "./dist/server.mjs",
+      "types": "./dist/server.d.ts"
+    },
+    "./runner": {
+      "default": "./dist/runner.mjs",
+      "types": "./dist/runner.d.ts"
+    }
+  },
   "scripts": {
     "test": "nx run-many -t test",
-    "build": "nx run-many -t build"
+    "build": "tsc --build",
+    "watch": "tsc --build --watch"
   },
   "keywords": [
     "vitest",
@@ -19,16 +35,25 @@
   ],
   "workspaces": [
     "examples/expo",
-    "packages/client"
+    "examples/node",
+    "packages/client",
+    "packages/server",
+    "packages/runner"
   ],
   "license": "ISC",
+  "dependencies": {
+    "vitest-remote-client": "0.1.0",
+    "vitest-remote-runner": "0.1.0",
+    "vitest-remote-server": "0.1.0"
+  },
   "devDependencies": {
+    "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
     "nx": "^17.1.1",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "vitest": "1.0.0-beta.4"
   },
   "eslintConfig": {
     "root": true,

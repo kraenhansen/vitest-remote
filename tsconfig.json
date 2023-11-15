@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "types": [
+      "vitest-remote-client",
+      "vitest-remote-server",
+      "vitest-remote-runner"
+    ]
+  },
+  "include": [
+    "./src"
+  ],
+  "references": [
+    {
+      "path": "./packages/client"
+    },
+    {
+      "path": "./packages/server"
+    },
+    {
+      "path": "./packages/runner"
+    },
+  ]
+}

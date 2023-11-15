@@ -1,30 +1,9 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "es2022",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-    "lib": [
-      "es2022"
-    ]
+    "composite": true,
   },
-  "include": [],
+  "files": [],
   "references": [
-    {
-      "path": "./src"
-    },
     {
       "path": "./src/browser"
     },
