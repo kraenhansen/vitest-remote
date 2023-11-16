@@ -6,17 +6,10 @@
     "rootDir": "./src",
     "types": [
       "@vitest/runner",
-      "node",
-      "vitest-remote-protocol",
-      "ws"
+      "promise-handle"
     ]
   },
   "include": [
     "./src"
-  ],
-  "references": [
-    {
-      "path": "../protocol"
-    },
   ]
 }

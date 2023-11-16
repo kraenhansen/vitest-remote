@@ -3,7 +3,6 @@
   "compilerOptions": {
     "outDir": "../../dist/react-native",
     "rootDir": ".",
-    "noResolve": false,
     "jsx": "react-native",
     "types": [
       "vitest-remote-client/common",

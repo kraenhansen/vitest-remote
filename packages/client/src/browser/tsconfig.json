@@ -3,6 +3,7 @@
   "compilerOptions": {
     "outDir": "../../dist/browser",
     "rootDir": ".",
+    "noResolve": true,
     "types": [
       "vitest-remote-client/common",
       "@vitest/browser",

@@ -2,6 +2,9 @@
   "name": "vitest-remote-runner",
   "version": "0.1.0",
   "type": "module",
+  "bin": {
+    "vitest-remote-runner": "./vitest-remote-runner.js"
+  },
   "scripts": {
     "build": "tsc --build"
   },
@@ -18,6 +21,10 @@
         "outputs": ["{projectRoot}/dist"]
       }
     }
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0",
+    "vitest-remote-server": "0.1.0"
   },
   "peerDependencies": {
     "@vitest/runner": "1.0.0-beta.4"

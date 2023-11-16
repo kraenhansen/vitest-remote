@@ -23,6 +23,10 @@
     "./common": {
       "default": "./dist/common/index.js",
       "types": "./dist/common/index.d.ts"
+    },
+    "./cli": {
+      "default": "./dist/node/cli.js",
+      "types": "./dist/node/cli.d.ts"
     }
   },
   "nx": {
@@ -32,6 +36,9 @@
         "outputs": ["{projectRoot}/dist"]
       }
     }
+  },
+  "dependencies": {
+    "cac": "^6.7.14"
   },
   "peerDependencies": {
     "@vitest/runner": "1.0.0-beta.4",

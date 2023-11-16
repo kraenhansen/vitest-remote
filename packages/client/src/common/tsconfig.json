@@ -4,9 +4,9 @@
     "outDir": "../../dist/common",
     "rootDir": ".",
     "composite": true,
-    "noResolve": true,
     "types": [
-      "@vitest/runner"
+      "@vitest/runner",
+      "vitest-remote-protocol"
     ],
     "lib": [
       "ES2022"

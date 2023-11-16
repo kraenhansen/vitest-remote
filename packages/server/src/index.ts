@@ -1,5 +1,1 @@
-import { VitestRunner } from "@vitest/runner";
-
-export class VitestRemoteServer implements VitestRunner {
-
-}
+export * from "./VitestRemoteServer.js";

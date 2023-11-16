@@ -9,18 +9,25 @@
     "email": "mail@kraenhansen.dk",
     "url": "https://github.com/kraenhansen"
   },
+  "bin": {
+    "vitest-remote": "./vitest-remote-cli.js"
+  },
   "exports": {
     "./client": {
-      "default": "./dist/client.mjs",
+      "default": "./dist/client.js",
       "types": "./dist/client.d.ts"
     },
     "./server": {
-      "default": "./dist/server.mjs",
+      "default": "./dist/server.js",
       "types": "./dist/server.d.ts"
     },
     "./runner": {
-      "default": "./dist/runner.mjs",
+      "default": "./dist/runner.js",
       "types": "./dist/runner.d.ts"
+    },
+    "./protocol": {
+      "default": "./dist/protocol.js",
+      "types": "./dist/protocol.d.ts"
     }
   },
   "scripts": {
@@ -38,13 +45,15 @@
     "examples/node",
     "packages/client",
     "packages/server",
-    "packages/runner"
+    "packages/runner",
+    "packages/protocol"
   ],
   "license": "ISC",
   "dependencies": {
     "vitest-remote-client": "0.1.0",
     "vitest-remote-runner": "0.1.0",
-    "vitest-remote-server": "0.1.0"
+    "vitest-remote-server": "0.1.0",
+    "vitest-remote-protocol": "0.1.0"
   },
   "devDependencies": {
     "@types/node": "^18",

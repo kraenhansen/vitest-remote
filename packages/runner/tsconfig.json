@@ -7,10 +7,16 @@
     "noResolve": false,
     "types": [
       "node",
+      "picocolors",
       "@vitest/runner"
     ]
   },
   "include": [
     "./src"
+  ],
+  "references": [
+    {
+      "path": "../server"
+    },
   ]
 }

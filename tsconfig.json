@@ -6,7 +6,8 @@
     "types": [
       "vitest-remote-client",
       "vitest-remote-server",
-      "vitest-remote-runner"
+      "vitest-remote-runner",
+      "vitest-remote-protocol"
     ]
   },
   "include": [
